@@ -1,24 +1,29 @@
-📦 Product Catalog API
-Este projeto é uma API RESTful criada usando ASP.NET Core, que permite gerenciar um catálogo de produtos. A API oferece funcionalidades para criar, listar e buscar produtos por ID, além de permitir a ordenação dos produtos com base no preço.
+# 📦 Product Catalog API
 
-🚀 Funcionalidades
-Criar um Produto: Adiciona um novo produto ao banco de dados.
-Listar Produtos: Retorna todos os produtos do catálogo, com a opção de ordená-los por preço.
-Buscar Produto por ID: Permite a busca de um produto específico através de seu ID.
-OBS: Método usado para testar API foi o Postman. As fotos de exemplo estão incluídas abaixo.
+Este projeto é uma API RESTful criada usando **ASP.NET Core**, que permite gerenciar um catálogo de produtos. A API oferece funcionalidades para criar, listar e buscar produtos por ID, além de permitir a ordenação dos produtos com base no preço.
 
-1️⃣ Criar Produto
-URL: /create
-Método: POST
+## 🚀 Funcionalidades
+1. **Criar um Produto**: Adiciona um novo produto ao banco de dados.
+2. **Listar Produtos**: Retorna todos os produtos do catálogo, com a opção de ordená-los por preço.
+3. **Buscar Produto por ID**: Permite a busca de um produto específico através de seu ID.
+
+> **OBS**: Método usado para testar API foi o **Postman**. As fotos de exemplo estão incluídas abaixo.
+
+---
+
+### 1️⃣ Criar Produto
+
+- **URL**: `/create`
+- **Método**: POST
+
 Este endpoint permite a criação de um novo produto no banco de dados. O produto é criado a partir das informações fornecidas no corpo da requisição.
 
-📝 Corpo da Requisição
+#### 📝 Corpo da Requisição
 A requisição deve enviar um JSON contendo as informações do produto a ser criado.
 
 Exemplo de corpo:
 
-json
-Copiar código
+```json
 {
   "Name": "Produto Exemplo",
   "Description": "Descrição do produto",
@@ -146,9 +151,7 @@ curl -X GET http://localhost:5000/1
 🛠️ Tecnologias Usadas
 ASP.NET Core: Framework para desenvolvimento de APIs.
 Entity Framework Core: ORM para interação com o banco de dados.
-Docker
-Azure (SQLserver(ou outro banco de dados de sua escolha): Banco de dados utilizado para armazenar os produtos).
-
+SQLite (ou outro banco de dados de sua escolha): Banco de dados utilizado para armazenar os produtos.
 📚 Referências
 Documentação do ASP.NET Core
 Documentação do Entity Framework Core
