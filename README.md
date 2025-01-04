@@ -55,6 +55,10 @@ curl -X POST http://localhost:5000/create -H "Content-Type: application/json" -d
   "Description": "Descrição do produto",
   "Price": 100.0
 }'
+```
+
+![image](https://github.com/user-attachments/assets/4da45581-b780-427e-9abe-6d3846598071)
+
 
 2️⃣ Listar Produtos (v1)
 URL: /v1/products
@@ -63,9 +67,12 @@ Descrição: Este endpoint retorna todos os produtos do catálogo.
 Respostas
 200 OK: Retorna a lista de produtos.
 
+![image](https://github.com/user-attachments/assets/c0382796-f814-4de1-9249-8a9240fdc22e)
+
+
 Exemplo de resposta:
 
-json
+``` json
 Copiar código
 [
   {
@@ -87,7 +94,7 @@ Exemplo de requisição com curl:
 bash
 Copiar código
 curl -X GET http://localhost:5000/v1/products
-
+```
 
 3️⃣ Listar Produtos (v2) - Ordenado por Preço
 URL: /v2/products
@@ -96,9 +103,12 @@ Descrição: Este endpoint retorna todos os produtos do catálogo, ordenados pel
 Respostas
 200 OK: Retorna a lista de produtos ordenada por preço.
 
+![image](https://github.com/user-attachments/assets/193efccc-389a-4438-b6e8-1d8aa5b1f38f)
+
+
 Exemplo de resposta:
 
-json
+``` json
 Copiar código
 [
   {
@@ -120,6 +130,8 @@ Exemplo de requisição com curl:
 bash
 Copiar código
 curl -X GET http://localhost:5000/v2/products
+```
+
 4️⃣ Buscar Produto por ID
 URL: /products/{id}
 Método: GET
@@ -127,9 +139,12 @@ Descrição: Este endpoint permite buscar um produto específico pelo seu ID.
 Respostas
 200 OK: Retorna o produto encontrado.
 
+![image](https://github.com/user-attachments/assets/67667197-f9ec-457a-92c1-42c06aab2154)
+
+
 Exemplo de resposta:
 
-json
+```json
 Copiar código
 {
   "id": 1,
@@ -143,6 +158,7 @@ Exemplo de requisição com curl:
 bash
 Copiar código
 curl -X GET http://localhost:5000/products/1
+```
 
 🛠️ Tecnologias Usadas
 ASP.NET Core: Framework para desenvolvimento de APIs.
@@ -150,6 +166,8 @@ Entity Framework Core: ORM para interação com o banco de dados.
 Docker: Para containers.
 Azure: Para deployment na nuvem.
 SQL Server (ou outro banco de dados de sua escolha): Banco de dados utilizado para armazenar os produtos.
+
+
 📚 Referências
 Documentação do ASP.NET Core
 Documentação do Entity Framework Core
