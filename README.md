@@ -60,7 +60,7 @@ curl -X POST http://localhost:5000/create -H "Content-Type: application/json" -d
 ![image](https://github.com/user-attachments/assets/4da45581-b780-427e-9abe-6d3846598071)
 
 
-2️⃣ Listar Produtos (v1)
+### 2️⃣ Listar Produtos (v1)
 URL: /v1/products
 Método: GET
 Descrição: Este endpoint retorna todos os produtos do catálogo.
@@ -96,7 +96,7 @@ Copiar código
 curl -X GET http://localhost:5000/v1/products
 ```
 
-3️⃣ Listar Produtos (v2) - Ordenado por Preço
+### 3️⃣ Listar Produtos (v2) - Ordenado por Preço
 URL: /v2/products
 Método: GET
 Descrição: Este endpoint retorna todos os produtos do catálogo, ordenados pelo preço de forma crescente.
@@ -132,7 +132,7 @@ Copiar código
 curl -X GET http://localhost:5000/v2/products
 ```
 
-4️⃣ Buscar Produto por ID
+### 4️⃣ Buscar Produto por ID
 URL: /products/{id}
 Método: GET
 Descrição: Este endpoint permite buscar um produto específico pelo seu ID.
@@ -160,7 +160,7 @@ Copiar código
 curl -X GET http://localhost:5000/products/1
 ```
 
-🛠️ Tecnologias Usadas
+### 🛠️ Tecnologias Usadas
 ASP.NET Core: Framework para desenvolvimento de APIs.
 Entity Framework Core: ORM para interação com o banco de dados.
 Docker: Para containers.
@@ -168,6 +168,6 @@ Azure: Para deployment na nuvem.
 SQL Server (ou outro banco de dados de sua escolha): Banco de dados utilizado para armazenar os produtos.
 
 
-📚 Referências
+### 📚 Referências
 Documentação do ASP.NET Core
 Documentação do Entity Framework Core
