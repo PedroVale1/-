@@ -161,13 +161,11 @@ curl -X GET http://localhost:5000/products/1
 ```
 
 ### 🛠️ Tecnologias Usadas
-ASP.NET Core: Framework para desenvolvimento de APIs.
-Entity Framework Core: ORM para interação com o banco de dados.
-Docker: Para containers.
-Azure: Para deployment na nuvem.
-SQL Server (ou outro banco de dados de sua escolha): Banco de dados utilizado para armazenar os produtos.
+- ASP.NET Core: Framework para desenvolvimento de APIs.
+- Entity Framework Core: ORM para interação com o banco de dados.
+- SQL Server (ou outro banco de dados de sua escolha): Banco de dados utilizado para armazenar os produtos.
 
 
 ### 📚 Referências
-Documentação do ASP.NET Core
-Documentação do Entity Framework Core
+- Documentação do ASP.NET Core
+- Documentação do Entity Framework Core
