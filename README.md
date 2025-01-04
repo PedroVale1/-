@@ -18,12 +18,12 @@ Este projeto é uma API RESTful criada usando **ASP.NET Core**, que permite gere
 
 Este endpoint permite a criação de um novo produto no banco de dados. O produto é criado a partir das informações fornecidas no corpo da requisição.
 
-#### 📝 Corpo da Requisição
+📝 Corpo da Requisição
 A requisição deve enviar um JSON contendo as informações do produto a ser criado.
 
 Exemplo de corpo:
 
-### json
+json
 {
   "Name": "Produto Exemplo",
   "Description": "Descrição do produto",
@@ -52,7 +52,8 @@ curl -X POST http://localhost:5000/create -H "Content-Type: application/json" -d
   "Description": "Descrição do produto",
   "Price": 100.0
 }'
-2️⃣ Listar Produtos (v1)
+
+###2️⃣ Listar Produtos (v1)
 URL: /v1/products
 Método: GET
 Este endpoint retorna todos os produtos do catálogo.
@@ -84,7 +85,7 @@ Copiar código
 bash
 Copiar código
 curl -X GET http://localhost:5000/v1/products
-3️⃣ Listar Produtos (v2) - Ordenado por Preço
+### 3️⃣ Listar Produtos (v2) - Ordenado por Preço
 URL: /v2/products
 Método: GET
 Este endpoint retorna todos os produtos do catálogo, ordenados pelo preço de forma crescente.
@@ -119,7 +120,7 @@ Copiar código
 curl -X GET http://localhost:5000/v2/products
 
 
-###4️⃣ Buscar Produto por ID
+### 4️⃣ Buscar Produto por ID
 URL: /localhost/port/{id}
 Método: GET
 Este endpoint permite buscar um produto específico pelo seu ID.
@@ -139,16 +140,16 @@ Copiar código
 }
 404 Not Found: Caso o produto com o ID fornecido não seja encontrado.
 
-###💡 Exemplo de requisição com curl:
+💡 Exemplo de requisição com curl:
 bash
 Copiar código
 curl -X GET http://localhost:5000/products/1
 
 
-###🛠️ Tecnologias Usadas
+🛠️ Tecnologias Usadas
 ASP.NET Core: Framework para desenvolvimento de APIs.
 Entity Framework Core: ORM para interação com o banco de dados.
 SQLite (ou outro banco de dados de sua escolha): Banco de dados utilizado para armazenar os produtos.
-###📚 Referências
+📚 Referências
 Documentação do ASP.NET Core
 Documentação do Entity Framework Core
